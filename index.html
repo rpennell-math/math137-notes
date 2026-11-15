@@ -35,6 +35,13 @@
   .sn { font-family:system-ui,sans-serif; font-variant-numeric:tabular-nums; color:var(--muted); min-width:2.4rem; font-size:.92rem; padding-top:.08rem; }
   .st { flex:1; }
   .pg { font-family:system-ui,sans-serif; color:var(--muted); font-size:.8rem; white-space:nowrap; padding-top:.15rem; }
+  .reviews { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1rem; margin-bottom:2rem; }
+  .review { background:var(--card); border:1px solid var(--line); border-left:4px solid #14325c; border-radius:8px; padding:1rem 1.25rem; text-decoration:none; color:var(--ink); display:block; }
+  .review:hover { background:#f2f5fa; }
+  .review .cl { margin-bottom:.15rem; }
+  .review strong { font-size:1.15rem; font-weight:normal; display:block; }
+  .review span.d { color:var(--muted); font-size:.92rem; }
+  .sechead { font-family:system-ui,sans-serif; font-size:.85rem; text-transform:uppercase; letter-spacing:.07em; color:var(--muted); margin:0 0 .6rem; font-weight:600; }
   footer { text-align:center; color:var(--muted); font-size:.85rem; padding:0 1rem 2.5rem; font-family:system-ui,sans-serif; }
   @media (max-width:560px) { header h1 { font-size:1.8rem; } .pg { display:none; } }
 </style>
@@ -53,6 +60,12 @@
   </div>
 </header>
 <main class="wrap">
+  <h2 class="sechead">Exam review</h2>
+  <div class="reviews">
+    <a class="review" href="MATH137-Midterm-Review.pdf"><span class="cl">Module 4B</span><strong>Midterm Review</strong><span class="d">Practice problems, one topic per exam problem (PDF)</span></a>
+    <a class="review" href="MATH137-Final-Review.pdf"><span class="cl">Module 8B</span><strong>Final Exam Review</strong><span class="d">Practice problems, one topic per exam problem (PDF)</span></a>
+  </div>
+  <h2 class="sechead">Lecture notes by section</h2>
   <div class="guide">
     <h2>How to use these notes</h2>
     Click any section below to jump straight to it in the PDF. Inside the notes, numbered boxes share one counter per section (so &ldquo;Theorem 2.3.4&rdquo; is the fourth numbered box in Section 2.3), and blue text is a clickable link.
